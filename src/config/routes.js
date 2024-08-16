@@ -6,4 +6,6 @@ export const routes = {
 
      //dummy route
      dummy: "/dummy",
+     millaccountcreation: "/millaccountcreation",
+     listmill: "/listmill",
 };

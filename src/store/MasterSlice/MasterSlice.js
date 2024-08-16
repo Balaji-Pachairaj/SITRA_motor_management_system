@@ -3,10 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
      auth: {
           isAuth: false,
-          email: "",
-          username: "",
-          password: "",
-          id: "",
+          obj: {},
      },
 };
 
@@ -21,10 +18,7 @@ const masterSlice = createSlice({
                     ...state,
                     auth: {
                          ...state.auth,
-                         id: action.payload?.id,
-                         email: action.payload?.email,
-                         username: action.payload?.username,
-                         password: action?.payload?.email,
+                         obj: action.payload,
                     },
                };
           },

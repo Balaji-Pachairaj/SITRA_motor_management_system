@@ -4,4 +4,8 @@ export let baseURL = "http://localhost:4000";
 
 export const apiendpoints = {
      signin: "/signin",
+
+     // Mill
+     createmillaccount: "/createmillaccount",
+     listmillaccounts: "/list/millaccounts",
 };

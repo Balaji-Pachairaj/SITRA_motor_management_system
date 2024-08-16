@@ -41,14 +41,7 @@ const Signinpage = () => {
           if (loginAuth?.isAuthenticated) {
                console.log(loginAuth);
                let obj = loginAuth?.user;
-               dispatch(
-                    masterSliceActions?.updateAuth({
-                         email: obj?.email,
-                         password: obj?.password,
-                         id: obj?._id,
-                         username: obj?.username,
-                    })
-               );
+               dispatch(masterSliceActions?.updateAuth(obj));
                navigate(routes?.dummy);
           } else {
                console.log(loginAuth);

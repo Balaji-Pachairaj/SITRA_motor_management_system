@@ -1,6 +1,6 @@
-import { defaultHeaders } from "./APIConfig";
+// import { defaultHeaders } from "./APIConfig";
 
-export const GetAPI = async (url, headers = defaultHeaders, method = "GET") => {
+export const GetAPI = async (url, headers, method = "GET") => {
      try {
           const response = await fetch(url, {
                method: method,
@@ -11,4 +11,3 @@ export const GetAPI = async (url, headers = defaultHeaders, method = "GET") => {
           return e;
      }
 };
-

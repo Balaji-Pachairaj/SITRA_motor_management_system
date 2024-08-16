@@ -4,7 +4,9 @@ import store from "./store";
 import Home from "./pages/Home/Home";
 import { routes } from "./config/routes";
 import Signinpage from "./pages/authentication/Signinpage";
-import DummyRoute from "./pages/DummyRoute";
+import DummyRoute from "./pages/DummyPages/DummyRoute";
+import MillAccountCreationDummy from "./pages/DummyPages/MillAccountCreationDummy";
+import MillListDummy from "./pages/DummyPages/MillListDummy";
 
 const router = createBrowserRouter([
      {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
      {
           path: routes.dummy,
           element: <DummyRoute />,
+     },
+     {
+          path: routes?.millaccountcreation,
+          element: <MillAccountCreationDummy />,
+     },
+     {
+          path: routes?.listmill,
+          element: <MillListDummy />,
      },
 ]);
 
