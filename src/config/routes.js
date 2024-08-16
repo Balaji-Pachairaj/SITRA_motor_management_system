@@ -3,4 +3,7 @@ export const routes = {
 
      // authentication routes
      signin: "/signin",
+
+     //dummy route
+     dummy: "/dummy",
 };

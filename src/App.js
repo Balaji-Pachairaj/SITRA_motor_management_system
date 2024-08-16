@@ -4,6 +4,7 @@ import store from "./store";
 import Home from "./pages/Home/Home";
 import { routes } from "./config/routes";
 import Signinpage from "./pages/authentication/Signinpage";
+import DummyRoute from "./pages/DummyRoute";
 
 const router = createBrowserRouter([
      {
@@ -15,6 +16,12 @@ const router = createBrowserRouter([
      {
           path: routes.signin,
           element: <Signinpage />,
+     },
+
+     // Dummy
+     {
+          path: routes.dummy,
+          element: <DummyRoute />,
      },
 ]);
 
