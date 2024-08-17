@@ -87,8 +87,13 @@ const MillListDummy = () => {
      useEffect(() => {
           let fun = async () => {
                let listMills = await millListFetch();
-               let responseDate = await listMills?.json();
-               setList(responseDate?.list);
+
+               if (listMills?.ok) {
+                    let responseDate = await listMills?.json();
+                    setList(responseDate?.list);
+               } else {
+                    window.alert("Error");
+               }
           };
           fun();
      }, []);
@@ -100,6 +105,7 @@ const MillListDummy = () => {
                </div>
                <div className="min-h-screen  flex flex-row justify-start gap-[2rem] flex-wrap mb-[4rem]">
                     {list.map((item) => {
+                         if (!item) return <></>;
                          return (
                               <MillCard
                                    mill={{

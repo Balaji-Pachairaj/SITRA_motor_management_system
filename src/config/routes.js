@@ -9,4 +9,5 @@ export const routes = {
      millaccountcreation: "/millaccountcreation_dummy",
      listmill: "/listmill_dummy",
      milldetailsdummy: "/milldetails_dummy",
+     unitdetailsdummy: "/unitdetails_dummy",
 };

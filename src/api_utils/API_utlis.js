@@ -10,4 +10,6 @@ export const apiendpoints = {
      listmillaccounts: "/list/millaccounts",
      indivMillDetails: "/indivmill",
      addadminonmills: "/addadminonmill",
+     addUnitUnderMills: "/createunitundermill",
+     indivUnitDetails: "/indivunit",
 };

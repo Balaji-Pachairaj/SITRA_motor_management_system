@@ -8,6 +8,7 @@ import DummyRoute from "./pages/DummyPages/DummyRoute";
 import MillAccountCreationDummy from "./pages/DummyPages/MillAccountCreationDummy";
 import MillListDummy from "./pages/DummyPages/MillListDummy";
 import MillDetailsPage from "./pages/DummyPages/MillDetailsPage";
+import UnitDetailsPage from "./pages/DummyPages/UnitDetailsPage";
 
 const router = createBrowserRouter([
      {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
      {
           path: routes?.milldetailsdummy + "/:millid",
           element: <MillDetailsPage />,
+     },
+     {
+          path: routes?.unitdetailsdummy + "/:unitid",
+          element: <UnitDetailsPage />,
      },
 ]);
 
