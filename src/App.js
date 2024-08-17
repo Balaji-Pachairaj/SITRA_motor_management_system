@@ -7,6 +7,7 @@ import Signinpage from "./pages/authentication/Signinpage";
 import DummyRoute from "./pages/DummyPages/DummyRoute";
 import MillAccountCreationDummy from "./pages/DummyPages/MillAccountCreationDummy";
 import MillListDummy from "./pages/DummyPages/MillListDummy";
+import MillDetailsPage from "./pages/DummyPages/MillDetailsPage";
 
 const router = createBrowserRouter([
      {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
      {
           path: routes?.listmill,
           element: <MillListDummy />,
+     },
+     {
+          path: routes?.milldetailsdummy + "/:millid",
+          element: <MillDetailsPage />,
      },
 ]);
 

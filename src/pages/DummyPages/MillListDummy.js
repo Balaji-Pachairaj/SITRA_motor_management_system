@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { GetAPI } from "../../api_utils/GetAPI";
 import { apiendpoints, baseURL } from "../../api_utils/API_utlis";
+import ButtonWithLoadingSpinnerComponent from "../../UI_components/ButtonWithLoadingSpinnerComponent";
+import { useNavigate } from "react-router";
+import { routes } from "../../config/routes";
 
 const MillCard = ({ mill }) => {
+     const navigate = useNavigate();
      // Function to determine status class
      const getStatusClass = (status) => {
           switch (status) {
@@ -34,6 +38,18 @@ const MillCard = ({ mill }) => {
                          >
                               {mill.status}
                          </p>
+                         <ButtonWithLoadingSpinnerComponent
+                              onClick={() => {
+                                   navigate(
+                                        routes?.milldetailsdummy +
+                                             "/" +
+                                             mill?.millId
+                                   );
+                              }}
+                              className=" ms-[1rem] h-[30px] border-2 ps-1 pe-1 rounded-[8px] font-poppins text-[14px]"
+                         >
+                              Details
+                         </ButtonWithLoadingSpinnerComponent>
                     </div>
                </div>
                <div className="px-6 py-4 border-t border-gray-200">
@@ -87,6 +103,7 @@ const MillListDummy = () => {
                          return (
                               <MillCard
                                    mill={{
+                                        millId: item?._id,
                                         millName: item?.name,
                                         millLocation: item?.location,
                                         status: item?.status,

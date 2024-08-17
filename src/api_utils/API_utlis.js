@@ -8,4 +8,6 @@ export const apiendpoints = {
      // Mill
      createmillaccount: "/createmillaccount",
      listmillaccounts: "/list/millaccounts",
+     indivMillDetails: "/indivmill",
+     addadminonmills: "/addadminonmill",
 };

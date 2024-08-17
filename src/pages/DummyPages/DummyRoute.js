@@ -1,7 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router";
+import { routes } from "../../config/routes";
+import ButtonWithLoadingSpinnerComponent from "../../UI_components/ButtonWithLoadingSpinnerComponent";
 
 const DummyRoute = () => {
+     const navigate = useNavigate();
      const { auth } = useSelector((state) => {
           return state.master;
      });
@@ -24,6 +28,15 @@ const DummyRoute = () => {
                <div className=" text-[24px] font-poppins font-[500]">
                     {mill?.location}
                </div>
+
+               <ButtonWithLoadingSpinnerComponent
+                    onClick={() => {
+                         navigate(routes?.milldetailsdummy + "/" + mill?._id);
+                    }}
+                    className=" ms-[1rem] h-[30px] border-2 ps-1 pe-1 rounded-[8px] font-poppins text-[14px]"
+               >
+                    Mill Details
+               </ButtonWithLoadingSpinnerComponent>
           </>
      );
 };
