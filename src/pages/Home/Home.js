@@ -43,6 +43,17 @@ const Home = () => {
                          List mills
                     </ButtonWithLoadingSpinnerComponent>
                </div>
+               <div className=" w-full h-fit flex flex-row justify-center mt-[1rem] ">
+                    <ButtonWithLoadingSpinnerComponent
+                         isLoading={false}
+                         className="w-[150px] h-[42px] border-4 font-montserrat text-[24px] "
+                         onClick={() => {
+                              navigate(routes?.userList);
+                         }}
+                    >
+                         List User
+                    </ButtonWithLoadingSpinnerComponent>
+               </div>
           </>
      );
 };

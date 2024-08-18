@@ -10,4 +10,5 @@ export const routes = {
      listmill: "/listmill_dummy",
      milldetailsdummy: "/milldetails_dummy",
      unitdetailsdummy: "/unitdetails_dummy",
+     userList: "listuser",
 };

@@ -13,4 +13,5 @@ export const apiendpoints = {
      addUnitUnderMills: "/createunitundermill",
      indivUnitDetails: "/indivunit",
      createdepartment: "/createdepartment",
+     listUser: "/list/user",
 };
