@@ -12,4 +12,5 @@ export const apiendpoints = {
      addadminonmills: "/addadminonmill",
      addUnitUnderMills: "/createunitundermill",
      indivUnitDetails: "/indivunit",
+     createdepartment: "/createdepartment",
 };
