@@ -10,6 +10,7 @@ import MillListDummy from "./pages/DummyPages/MillListDummy";
 import MillDetailsPage from "./pages/DummyPages/MillDetailsPage";
 import UnitDetailsPage from "./pages/DummyPages/UnitDetailsPage";
 import UsersList from "./pages/DummyPages/UserList";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
      {
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
      {
           path: routes.signin,
           element: <Signinpage />,
+     },
+
+     {
+          path: routes?.dashboard,
+          element: <Dashboard />,
      },
 
      // Dummy

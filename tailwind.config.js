@@ -9,6 +9,11 @@ module.exports = {
           "./src/**/*.{js,ts,jsx,tsx,mdx}",
      ],
      theme: {
+          backgroundImage: {
+               mainGradient:
+                    "linear-gradient(145deg, #20BE57 -1%, #159851 99%)",
+          },
+
           extend: {
                fontFamily: {
                     montserrat: ["Montserrat", "sans-serif"],

@@ -4,6 +4,9 @@ export const routes = {
      // authentication routes
      signin: "/signin",
 
+     // dashboard
+     dashboard: "/dashboard",
+
      //dummy route
      dummy: "/dummy",
      millaccountcreation: "/millaccountcreation_dummy",
